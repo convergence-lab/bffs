@@ -1,0 +1,3 @@
+miosqp
+scipy
+numpy
