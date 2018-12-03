@@ -15,3 +15,8 @@ clone this repository and exec setup.py.
 git clone https://github.com/convergence-lab/bffs
 python setup.py install
 ```
+
+
+## Usage
+
+see test_run.py
