@@ -12,7 +12,6 @@ import miosqp
 import time
 
 from sklearn.base import BaseEstimator
-from sklearn.externals.joblib import Parallel, delayed
 
 class BF(BaseEstimator):
     def __init__(self, itermax=100, verbose=False, n_jobs=1, delta=1e-4, eps=1e-8, seed=0):
