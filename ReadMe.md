@@ -12,10 +12,14 @@ We implemented only BF version of MIP Feature Selector.
 clone this repository and exec setup.py.
 
 ```
+git clone https://github.com/oxfordcontrol/miosqp
+cd miosqp
+python setup.py install
+cd ..
 git clone https://github.com/convergence-lab/bffs
+cd bffs
 python setup.py install
 ```
-
 
 ## Usage
 
