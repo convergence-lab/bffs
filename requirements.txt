@@ -1,3 +1,0 @@
-miosqp
-scipy
-numpy

@@ -35,6 +35,9 @@ if __name__ == "__main__":
 
     print("Apply Feature Selection by MIP")
     newX = selector.fit_transform(X, y)
+    print(f"Selected {newX.shape[1]} features")
+    print(selector.selected())
+    print(selector.coef())
     model2 = LogisticRegression()
     model2.fit(newX, y)
     acc2 = model2.score(newX, y)

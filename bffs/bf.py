@@ -14,13 +14,13 @@ import time
 from sklearn.base import BaseEstimator
 
 class BF(BaseEstimator):
-    def __init__(self, itermax=100, verbose=False, n_jobs=1, delta=1e-4, eps=1e-8, seed=0):
+    def __init__(self, itermax=100, verbose=False, n_jobs=1, delta=1e-3, eps=1e-6, seed=12345):
         self._itermax = itermax
         self._verbose = verbose
         self._n_jobs = n_jobs
         self._delta = delta
         self._eps = eps
-        np.random.seed(seed)
+        # np.random.seed(seed)
     def fit(self, X, y):
         if len(X.shape) != 2:
             raise ValueError("the dimension of X should be 2.")
