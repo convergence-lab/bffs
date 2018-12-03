@@ -20,7 +20,7 @@ class BF(BaseEstimator):
         self._n_jobs = n_jobs
         self._delta = delta
         self._eps = eps
-        # np.random.seed(seed)
+        np.random.seed(seed)
     def fit(self, X, y):
         if len(X.shape) != 2:
             raise ValueError("the dimension of X should be 2.")
